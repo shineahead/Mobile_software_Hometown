@@ -1,0 +1,100 @@
+.box {
+  padding: 20rpx;
+  box-sizing: border-box;
+  background-color: #e7e5e1;
+}
+
+.qiyuan {
+  display: block;
+  border-radius: 20rpx;
+  width: 100%;
+  margin-bottom: 20rpx;
+}
+
+.content {
+  display: flex;
+  padding: 10rpx 0;
+  margin-bottom: 20rpx;
+  background-color: #faf8f5;
+  border-radius: 20rpx;
+  position: relative;
+}
+
+.content image {
+  border-radius: 20rpx;
+  margin: 75rpx 20rpx 0 20rpx;
+  flex: 5;
+}
+
+.content .word {
+  flex: 5;
+}
+
+.content .title {
+  font-size: 50rpx;
+  font-family: cursive;
+  font-weight: bold;
+  position: absolute;
+  top: 10rpx;
+  left: 250rpx;
+}
+
+.content .word .p1 {
+  margin: 20rpx 20rpx 0 0;
+  padding-bottom: 30rpx;
+  font-size: 34rpx;
+  font-family: cursive;
+  padding-top: 40rpx;
+}
+
+.sanxingdui {
+  display: flex;
+  padding: 20rpx 0;
+  margin-bottom: 20rpx;
+  border-radius: 20rpx;
+  background-color: #faf8f5;
+}
+
+.sanxingdui image {
+  display: block;
+  margin: 0 20rpx;
+  border-radius: 20rpx;
+  flex: 5;
+}
+
+.sanxingdui .p2 {
+  flex: 5;
+  margin: -40rpx 0;
+  font-size: 34rpx;
+  font-family: cursive;
+  padding-top: 40rpx;
+}
+
+.huguang {
+  display: flex;
+  flex-direction: column;
+  background-color: #D9D8CF;
+  border-radius: 20rpx;
+}
+
+.huguang .title {
+  font-size: 50rpx;
+  font-family: cursive;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20rpx;
+}
+
+.huguang .word .p1 {
+  margin: -30rpx 30rpx;
+  padding-top: 40rpx;
+  padding-bottom: 30rpx;
+  font-size: 34rpx;
+  font-family: cursive;
+}
+
+.huguang image {
+  display: block;
+  margin: 30rpx;
+  border-radius: 20rpx;
+}

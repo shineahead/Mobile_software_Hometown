@@ -1,0 +1,41 @@
+<view class="box">
+  <image src="/images/旅行.jpg" mode="widthFix" class="qiyuan"></image>
+
+  <view class="content">
+    <view class="title">
+        <text>四川发源</text>
+    </view>
+    <image src="/images/起源.jpg" mode="widthFix"></image>
+    <view class="word">
+      <view class="p1">
+        <view style="text-indent: 2em;">
+          四川历史悠久，地大物博，自古以来就享有“天府之国”的美誉。李白在《蜀道难》中所说的<text style="color: red;font-weight: bold;">“蚕丛及鱼凫，开国何茫然”</text>中点出了传说中蚕丛和鱼凫立了蜀国，开国年代实在久远无法详谈。但这些只是传说，古蜀国在历史记载很少，这就使得一部分学者并不认可古蜀国。
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="sanxingdui">
+    <image src="/images/三星堆.jpg" mode="widthFix"></image>
+    <view class="p2">
+      <view style="text-indent: 2em;">
+        然而三星堆出土的蚕丛纵目面具和三星堆金杖狠狠的给了那些质疑古蜀国文明的学者一记响亮的耳光，强力的证据证实了曾经古蜀国存在的真实性。
+      </view>
+    </view>
+  </view>
+  
+  <view class="huguang">
+    <view class="title">
+        <text>湖广填四川</text>
+    </view>
+    <view class="word">
+      <view class="p1">
+        <view style="text-indent: 2em;">
+          清朝时期，中国南部的湖广地区人口相对较多，而西部的四川地区则相对人口稀少。湖广地区人口过剩，资源短缺，而四川地区拥有较为丰富的土地和资源。于是在清乾隆年间，湖广总督傅友德提出了"湖广填四川"的迁徙计划。该计划以拓展四川边疆、提高经济发展为目的，鼓励湖广地区的人民迁徙到四川，开垦荒地，发展农业和商业。这里的<text style="color: red;font-weight: bold;">“湖广”</text>地区并不是指湖南湖北和广东广西等地带。在清朝时期，有个湖广省，从元代一直到清初，这个行政划分一直没变。
+        </view>
+      </view>
+    </view>
+    <image src="/images/湖广.jpg"></image>
+  </view>
+
+</view>

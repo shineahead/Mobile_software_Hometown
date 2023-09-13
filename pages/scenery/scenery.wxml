@@ -1,0 +1,49 @@
+<view class="box">
+  <view class="header">
+    <image src="/images/旅游宣传图.jpg" mode="widthFix"></image>
+  </view>
+
+  <view class="pic">
+    <text class="txt">一起去度假</text>
+    <view class="word">
+      <text>探访四川是一场充满魅力的冒险。首先，品味四川辣椒香气，享受麻辣火锅和川菜的独特美味。其次，探索壮丽的自然景观，如稻城亚丁、峨眉山和九寨沟，感受大自然的奇迹。此外，四川还有悠久的历史遗迹，如都江堰和黄龙古寨，让你感受到千年文化的底蕴。</text>
+    </view>
+    <image src="/images/飞机.png" class="plane"></image>
+    <image src="/images/一起去度假.jpg" mode="heightFix"></image>
+    <image src="/images/一起去度假2.jpg" mode="heightFix"></image>
+  </view>
+
+  <view class="suggest" hover-class="suggestHover">
+    <image src="/images/推荐.png" class="icon1"/>
+    为你推荐
+    <image src="/images/推荐.png" class="icon2"/>
+  </view>
+
+  <view class="scenery" wx:for="{{scenery}}" bindtap="getDetail" data-id="{{item.id}}">
+    <image src="{{item.image}}" class="img"></image>
+    <view class="info">
+      <view style="display: flex;">
+        <text class="name">{{item.name}}</text>
+        <!-- 评级 -->
+        <view class="level">
+          <text style="font-family: STHeiti;">{{item.level}}</text>
+        </view>
+      </view>
+      <!-- 评价星星 -->
+      <view style="display: flex;">
+        <view class="mark" wx:for="{{item.starNum}}"><image src="/images/白星星.png" /></view>
+      </view>
+      <!-- 特色 -->
+      <view class="special">
+        <text>{{item.special}}</text>
+      </view>
+      <!-- 地址 -->
+      <view class="address">
+        <text>{{item.address}}</text>
+      </view>
+    </view>
+  </view>
+
+</view>
+
+

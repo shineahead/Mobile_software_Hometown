@@ -1,0 +1,72 @@
+<view class="box">
+  <!-- 导航栏 -->
+  <view class="header">
+    <swiper indicator-dots indicator-color="gray" autoplay
+    circular interval="2000" class="sp">
+      <swiper-item>
+        <image src="/images/四川味道1.jpg" mode="widthFix"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="/images/四川味道2.jpg" mode="widthFix"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="/images/四川味道3.jpg" mode="widthFix"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <!-- 介绍分类 -->
+  <view class="type">
+    <view class="classic" data-title="川菜经典" bindtap="changeTitle">
+      <image src="/images/川菜经典.jpg"></image>
+      <text>川菜经典</text>
+    </view>
+    <view class="snack" data-title="川味小吃" bindtap="changeTitle">
+      <image src="/images/川味小吃.jpg"></image>
+      <text>川味小吃</text>
+    </view>
+    <view class="barbebue" data-title="川式烧烤" bindtap="changeTitle">
+      <image src="/images/川式烧烤.jpg"></image>
+      <text>川式烧烤</text>
+    </view>
+    <view class="special" data-title="地方特色" bindtap="changeTitle">
+      <image src="/images/地方特色.jpg"></image>
+      <text>地方特色</text>
+    </view>
+  </view>
+
+  <!-- banner -->
+  <view class="banner">
+    <image src="/images/人气推荐.png" mode="widthFix"></image>
+  </view>
+
+  <!-- 菜单介绍 -->
+  <view class="menu">
+    <!-- 菜单里面分为左右两列 -->
+    <view class="title">
+      <image src="/images/星星.png"></image>
+      {{title}}
+      <image src="/images/星星.png"></image>
+    </view>
+    <view class="left">
+      <view class="goods" bindtap="foodDetail" wx:for="{{food_left}}"
+      id="{{item.id}}" data-id="{{item.id}}" wx:key="{{item.id}}">
+        <image src="{{item.image}}" class="image"></image>
+        <view class="label">{{label[item.lid]}}</view>
+        <view class="name">{{item.name}}</view>
+        <view class="evaluate">{{item.evaluate}}</view>
+      </view>
+    </view>
+    <view class="right">
+      <view class="goods" bindtap="foodDetail" wx:for="{{food_right}}"
+      id="{{item.id}}" data-id="{{item.id}}" wx:key="{{item.id}}">
+        <image src="{{item.image}}" class="image"></image>
+        <view class="label">{{label[item.lid]}}</view>
+        <view class="name">{{item.name}}</view>
+        <view class="evaluate">{{item.evaluate}}</view>
+      </view>
+    </view>
+  </view>
+
+</view>
+

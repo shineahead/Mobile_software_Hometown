@@ -1,0 +1,150 @@
+<view class="box">
+
+  <view class="nav">
+    <image src="/images/左箭头.png" bindtap="backward"></image>
+    <view>我的收藏</view>
+  </view>
+  
+  <!-- 返回按钮，使用固定定位方式 -->
+  <view class="fixed" bindtap="backward">
+    <image src="/images/转发.png"></image>
+  </view>
+
+
+  <view class="back">
+    <view class="info">
+      <view style="display: flex; margin: 0 20rpx; border-bottom: 2px solid #f3f3f3; padding-bottom: 30rpx;">
+        <image class="avatar" src="{{imageUrl}}"></image>
+        <view class="desc">
+          <text style="color: green; font-size: large;">{{nickName}}</text>
+          <text style="color: gray; margin-top: 20rpx;">{{sign}}</text>
+        </view>
+      </view>
+      
+      <view class="intro">
+        <text>当您发现美味佳肴时，将其添加到收藏界面，随时翻阅和分享您的美食之旅。</text>
+      </view>
+      
+      <!-- 波浪图 -->
+      <image class="wave" src="/images/wave.gif"></image>
+
+    </view>
+  </view>
+
+  <!-- 推荐收藏 -->
+  <view class="recommend" hover-class="recommendHover">
+    推荐收藏
+  </view>
+
+  <view class="recommendGoods">
+    <swiper id="sp" autoplay circular interval="3000">
+      <swiper-item wx:for="{{recommendList}}" data-id="{{item.id}}"
+      data-title="{{item.title}}" bindtap="goToDetail">
+        <image src="{{item.image}}"></image>
+        <view class="label">{{label[item.lid]}}</view>
+        <view class="info">
+          <view>
+            <text style="color: green; font-size: 40rpx;">菜名：</text>
+          <text style="font-size: 33rpx;">{{item.name}}</text>
+          </view>
+          <view style="margin-top: 20rpx; color: orange;">
+            <text style="color: green; font-size: 40rpx;">评价：</text>
+            <text>{{item.evaluate}}</text>
+          </view>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <view class="line1"></view>
+  <view class="line2"></view>
+
+  <!-- 美食收藏 -->
+  <view class="title">
+    <text>美食收藏</text>
+    <image src="/images/收藏.png"></image>
+  </view>
+
+  <view class="empty" wx:if="{{storage.length == 0}}">
+    <text>当前美食列表为空，抓紧收藏吧~</text>
+  </view>
+  <view wx:else>
+    <view wx:for="{{storage}}">
+      <view class="myStore" wx:if="{{index % 2 == 0}}">
+        <view class="msg">
+          <view class="name">
+            <text style="color: #7FD1AE; font-size: 40rpx;">菜名：</text>
+            <text style="font-size: 33rpx;">{{item.name}}</text>
+          </view>
+          <view class="eva">
+            <text style="color: #7FD1AE; font-size: 40rpx;">评价：</text>
+            <text style="font-size: 33rpx;">{{item.evaluate}}</text>
+          </view>
+          <view class="favo">
+            <text style="color: #7FD1AE; font-size: 40rpx;">喜爱：</text>
+            <image src="/images/评分星星{{i}}.png" wx:for="{{item.check}}" data-id='{{index}}' data-fid="{{item.id}}" wx:for-item="i" data-title="{{item.title}}" bindtap="getMark"></image>
+          </view>
+        </view>
+        <view class="img" bindtap="goToDetail" data-id="{{item.id}}"
+        data-title="{{item.title}}">
+          <image src="{{item.image}}"></image>
+        </view>
+      </view>
+
+      <view class="myStore" wx:else>
+        <view class="img" bindtap="goToDetail" data-id="{{item.id}}"
+        data-title="{{item.title}}">
+          <image src="{{item.image}}"></image>
+        </view>
+        <view class="msg">
+          <view class="name">
+            <text style="color: #7FD1AE; font-size: 40rpx;">菜名：</text>
+            <text style="font-size: 33rpx;">{{item.name}}</text>
+          </view>
+          <view class="eva">
+            <text style="color: #7FD1AE; font-size: 40rpx;">评价：</text>
+            <text style="font-size: 33rpx;">{{item.evaluate}}</text>
+          </view>
+          <view class="favo">
+            <text style="color: #7FD1AE; font-size: 40rpx;">喜爱：</text>
+            <image src="/images/评分星星{{i}}.png" wx:for="{{item.check}}" data-id='{{index}}' data-fid="{{item.id}}" wx:for-item="i" data-title="{{item.title}}" bindtap="getMark"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  
+  
+  <view class="line1"></view>
+  <view class="line3"></view>
+
+  <!-- 杂闻收藏 -->
+  <view class="title">
+    <text>杂闻收藏</text>
+    <image src="/images/收藏.png"></image>
+  </view>
+
+  <view class="zawen">
+    <view class="empty" wx:if="{{article.length == 0}}">
+      <text>当前杂闻列表为空，抓紧收藏吧~</text>
+    </view>
+    
+    <view wx:else>
+      <view class="list" hover-class="listHv" wx:for="{{article}}"
+    bindtap="goToZawen" data-id="{{item.id}}">
+        <image class="icon" src="{{item.icon}}"/>
+        <text>{{item.title}}</text>
+        <image src="/images/右箭头.png" class="arrow" mode="widthFix"/>
+      </view>
+    </view>
+
+  </view>
+
+  <view class="line3"></view>
+
+  <!-- 更多 -->
+  <image class="more" src="/images/更多.jpg" mode="widthFix" bindtap="getMore"></image>
+
+</view>
+
+

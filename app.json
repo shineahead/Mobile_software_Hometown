@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/food/food",
+    "pages/scenery/scenery",
+    "pages/personal/personal",
+    "pages/storyDetail/storyDetail",
+    "pages/origin/origin",
+    "pages/personalStore/personalStore",
+    "pages/foodDetail/foodDetail",
+    "pages/sceneryDetail/sceneryDetail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#7F74E0",
+    "navigationBarTitleText": "桑梓之旅——探寻家乡之美",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "selectedColor": "#F98F71",
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "主页",
+      "iconPath": "/images/主页.png",
+      "selectedIconPath": "/images/主页-选中.png"
+    }, {
+      "pagePath": "pages/food/food",
+      "text": "美食",
+      "iconPath": "/images/美食.png",
+      "selectedIconPath": "/images/美食-选中.png"
+    }, {
+      "pagePath": "pages/scenery/scenery",
+      "text": "景点",
+      "iconPath": "/images/景点.png",
+      "selectedIconPath": "/images/景点-选中.png"
+    }, {
+      "pagePath": "pages/personal/personal",
+      "text": "我的",
+      "iconPath": "/images/我的.png",
+      "selectedIconPath": "/images/我的-选中.png"
+    }
+  ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

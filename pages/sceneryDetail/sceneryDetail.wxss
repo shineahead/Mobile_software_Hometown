@@ -1,0 +1,191 @@
+.box {
+  font-family: cursive;
+  min-height: 1200rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+/* 标题 */
+.title {
+  color: #6b7ff5;
+  font-size: 50rpx;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+/* 图片 */
+.box .pic {
+  width: 100%;
+  border-radius: 30rpx;
+}
+/* 简介 */
+.introduction {
+  color: #7BB6B4;
+  margin: 10rpx 0;
+  font-size: 35rpx;
+}
+/* 评价 */
+.star {
+  display: flex;
+  margin-bottom: 20rpx;
+  position: relative;
+}
+
+.star .eva {
+  display: block;
+  height: 45rpx;
+  width: 45rpx;
+  position: absolute;
+  top: 0;
+  right: 20rpx;
+}
+
+.star .mark{
+  display: flex;
+  /* 水平居中 */
+  justify-content: center;
+  /* 竖直居中 */
+  align-items: center;
+  height: 35rpx;
+  width: 35rpx;
+  margin: 2rpx;
+  text-align: center;
+  background-color: #fa8505;
+}
+
+.star .mark image {
+  height: 25rpx;
+  width: 25rpx;
+}
+
+/* 点击评论 */
+.box .btnComment {
+  display: flex;
+  position: relative;
+  height: 80rpx;
+  margin-top: 40rpx;
+  padding-top: 10rpx;
+  padding-left: 30rpx;
+  box-sizing: border-box;
+  border-radius: 60rpx;
+  background-color: white;
+}
+.box .btnComment input{
+  color: #748bb3;
+  height: 60rpx;
+  width: 490rpx;
+}
+.box .btnComment .img1 {
+  position: absolute;
+  top: 0;
+  left: 600rpx;
+  display: block;
+  height: 80rpx;
+  width: 80rpx;
+}
+.box .btnComment .img2 {
+  position: absolute;
+  top: 8rpx;
+  left: 520rpx;
+  display: block;
+  height: 65rpx;
+  width: 65rpx;
+}
+/* 评论区 */
+.box .comment {
+  width: 100%;
+  padding: 20rpx 0;
+}
+
+.box .comment .header {
+  display: flex;
+  text-align: center;
+  padding-left: 230rpx;
+  font-family: cursive;
+  font-size: 45rpx;
+}
+
+.box .comment .icon {
+  display: block;
+  height: 50rpx;
+  width: 50rpx;
+}
+
+.box .comment .content {
+  padding: 20rpx;
+  margin: 20rpx 0;
+  background-color: white;
+  font-size: 35rpx;
+  font-family: cursive;
+}
+
+.box .comment .content .commentImg {
+  display: block;
+  width: 630rpx;
+  margin: 20rpx 0 20rpx 10rpx;
+}
+
+/* 用户信息 */
+.box .comment .content .info {
+  display: flex;
+  position: relative;
+  margin-bottom: 10rpx;
+}
+
+.box .comment .content .info .reply {
+  position: absolute;
+  left: 500rpx;
+  top: 0;
+  color: #00A5FF;
+}
+
+.box .comment .content .info .replyHv {
+  color: rgba(61, 162, 254, 0.5);
+}
+
+.box .comment .content .info .delete {
+  position: absolute;
+  top: -10rpx;
+  right: 10rpx;
+  display: block;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.box .comment .content .info .love {
+  position: absolute;
+  top: -7rpx;
+  right: 80rpx;
+  display: block;
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.box .comment .content .info .avatar {
+  display: block;
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 50%;
+}
+
+.box .comment .content .info .nickname {
+  position: absolute;
+  top: 0;
+  left: 105rpx;
+  font-weight: bold;
+}
+
+.box .comment .content .info .where {
+  position: absolute;
+  top: 48rpx;
+  left: 100rpx;
+  color: #939393;
+  font-size: 30rpx;
+}
+.box .comment .content .info .time {
+  position: absolute;
+  top: 48rpx;
+  left: 380rpx;
+  color: #939393;
+  font-size: 30rpx;
+}

@@ -1,0 +1,175 @@
+.box {
+  position: relative;
+  min-height: 1205rpx;
+  padding-bottom: 20rpx;
+  padding: 30rpx;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+
+.box .store {
+  position: absolute;
+  top: 30rpx;
+  left: 490rpx;
+  display: block;
+  height: 50rpx;
+  width: 50rpx;
+}
+
+.box .pic {
+  width: 100%;
+  border-radius: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.box .title {
+  color: #6b7ff5;
+  text-align: center;
+  font-weight: bold;
+  font-family: cursive;
+  font-size: 50rpx;
+  margin-bottom: 30rpx;
+}
+/* 简介 */
+.box .introduction {
+  font-family: cursive;
+}
+/* 评分 */
+.box .evaluate {
+  padding: 20rpx 0;
+  font-family: cursive;
+  margin-bottom: 10rpx;
+}
+/* 点击评论 */
+.box .btnComment {
+  display: flex;
+  position: relative;
+  height: 80rpx;
+  margin-top: 40rpx;
+  padding-top: 10rpx;
+  padding-left: 30rpx;
+  box-sizing: border-box;
+  border-radius: 60rpx;
+  background-color: white;
+}
+.box .btnComment input{
+  color: #748bb3;
+  height: 60rpx;
+  width: 490rpx;
+}
+.box .btnComment .img1 {
+  position: absolute;
+  top: 0;
+  left: 600rpx;
+  display: block;
+  height: 80rpx;
+  width: 80rpx;
+}
+.box .btnComment .img2 {
+  position: absolute;
+  top: 8rpx;
+  left: 520rpx;
+  display: block;
+  height: 65rpx;
+  width: 65rpx;
+}
+/* 评论区 */
+.box .comment {
+  width: 100%;
+  padding: 20rpx 0;
+}
+
+.box .comment .header {
+  display: flex;
+  text-align: center;
+  padding-left: 230rpx;
+  font-family: cursive;
+  font-size: 45rpx;
+}
+
+.box .comment .icon {
+  display: block;
+  height: 50rpx;
+  width: 50rpx;
+}
+
+.box .comment .content {
+  padding: 20rpx;
+  margin: 20rpx 0;
+  background-color: white;
+  font-size: 35rpx;
+  font-family: cursive;
+}
+
+.box .comment .content .commentImg {
+  display: block;
+  width: 630rpx;
+  margin: 20rpx 0 20rpx 10rpx;
+}
+
+/* 用户信息 */
+.box .comment .content .info {
+  display: flex;
+  position: relative;
+  margin-bottom: 10rpx;
+}
+
+.box .comment .content .info .reply {
+  position: absolute;
+  left: 500rpx;
+  top: 0;
+  color: #00A5FF;
+}
+
+.box .comment .content .info .replyHv {
+  color: rgba(61, 162, 254, 0.5);
+}
+
+.box .comment .content .info .delete {
+  position: absolute;
+  top: -10rpx;
+  right: 10rpx;
+  display: block;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.box .comment .content .info .love {
+  position: absolute;
+  top: -7rpx;
+  right: 80rpx;
+  display: block;
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.box .comment .content .info .avatar {
+  display: block;
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 50%;
+}
+
+.box .comment .content .info .nickname {
+  position: absolute;
+  top: 0;
+  left: 105rpx;
+  font-weight: bold;
+}
+
+.box .comment .content .info .where {
+  position: absolute;
+  top: 48rpx;
+  left: 100rpx;
+  color: #939393;
+  font-size: 30rpx;
+}
+
+.box .comment .content .info .time {
+  position: absolute;
+  top: 48rpx;
+  left: 380rpx;
+  color: #939393;
+  font-size: 30rpx;
+}
+

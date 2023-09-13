@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "古川美食记",
+  "backgroundColor": "#fff",
+  "onReachBottomDistance": 1, 
+  "backgroundTextStyle": "dark",
+  "enablePullDownRefresh": true
+}

@@ -1,0 +1,310 @@
+.box {
+  font-family: cursive;
+  box-sizing: border-box;
+  min-height: 1328rpx;
+  position: relative;
+}
+
+/* 返回按钮，使用固定定位方式 */
+.fixed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 50rpx;
+  bottom: 150rpx;
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50%;
+  background-color: #fcedd6;
+  z-index: 3;
+}
+
+.fixed image {
+  display: block;
+  height: 50rpx;
+  width: 50rpx;
+}
+
+/* 导航栏 */
+
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+  width: 100%;
+  position: absolute;
+  top: 55rpx;
+  z-index: 2;
+}
+
+.nav image {
+  display: block;
+  height: 40rpx;
+  width: 40rpx;
+  padding-right: 250rpx;
+}
+
+.nav view {
+  font-size: 35rpx;
+  color: white;
+}
+
+/* 背景信息 */
+.back {
+  height: 520rpx;
+  padding-top: 150rpx;
+  padding-left: 25rpx;
+  box-sizing: border-box;
+  /* background-color: #3febb9; */
+  background-image:url("https://s1.ax1x.com/2023/09/02/pPB3eIA.jpg");
+  position: relative;
+}
+
+.back .info {
+  height: 300rpx;
+  width: 700rpx;
+  padding: 30rpx;
+  border-radius: 20rpx;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.back .info .avatar {
+  display: block;
+  height: 110rpx;
+  width: 110rpx;
+  border-radius: 50%;
+}
+
+.back .info .desc {
+  display: flex;
+  margin-left: 50rpx;
+  flex-direction: column;
+}
+
+.back .intro {
+  text-indent: 2em;
+  padding: 0 10rpx;
+  margin-top: 20rpx;
+  color: #B6BCF4;
+}
+
+/* 波浪图 */
+.back .wave {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  mix-blend-mode: screen;/* 透明部分用底部背景色填充，简称滤色 */
+  height: 120rpx;
+}
+
+
+/* 推荐收藏 */
+.recommend {
+  color: white;
+  margin: 0 25rpx;
+  margin-top: 30rpx;
+  border-radius: 60rpx;
+  height: 100rpx;
+  font-size: 50rpx;
+  text-align: center;
+  line-height: 100rpx;
+  box-sizing: border-box;
+  background-color: #5DCFDE;
+  position: relative;
+}
+
+.recommendHover {
+  background-color: rgba(106, 206, 221, 0.8);
+}
+
+.recommend::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  border: 3px dotted #5DCFDE;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  border-radius: 100rpx;
+  transform: scale(1.03, 1.2);
+}
+
+/* 推荐的美食 */
+.recommendGoods {
+  margin: 50rpx 25rpx 0 25rpx;
+  border-radius: 30rpx;
+  background-color: #f7f7f7;
+}
+
+.recommendGoods #sp {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.recommendGoods #sp image {
+  display: block;
+  border-radius: 30rpx 0 0 30rpx;
+  height: 100%;
+  width: 400rpx;
+}
+
+.recommendGoods #sp .label {
+  position: absolute;
+  padding: 6rpx;
+  font-size: 35rpx;
+  border-radius: 20rpx 0 0 20rpx;
+  bottom: 0;
+  right: 296rpx;
+  background-color: #ffcf00;
+}
+
+.recommendGoods #sp .info {
+  position: absolute;
+  top: 30rpx;
+  right: 25rpx;
+  width: 250rpx;
+  height: 240rpx;
+}
+
+.line1 {
+  height: 30rpx;
+  background-color: white;
+}
+
+.line2 {
+  height: 30rpx;
+  background-color: #f7f7f7;
+}
+
+.line3 {
+  height: 50rpx;
+  background-color: #f7f7f7;
+}
+
+/* 美食收藏 */
+.title {
+  display: flex;
+  padding: 30rpx;
+  font-size: 50rpx;
+}
+
+.title::before {
+  content: "";
+  margin-right: 20rpx;
+  border-left: 4px solid red;
+}
+
+.title image {
+  display: block;
+  height: 50rpx;
+  width: 50rpx;
+  margin-top: 2rpx;
+  margin-left: 20rpx;
+}
+
+.myStore {
+  display: flex;
+}
+
+.myStore .msg {
+  flex: 5;
+  height: 250rpx;
+  padding: 20rpx 0;
+  box-sizing: border-box;
+  background-color: rgba(200, 249, 255, 0.5);
+}
+
+.myStore .msg .name {
+  margin-left: 20rpx;
+}
+.myStore .msg .eva {
+  margin: 10rpx 10rpx 10rpx 20rpx;
+  color: orange;
+}
+
+.myStore .msg .favo {
+  display: flex;
+  margin-left: 20rpx;
+}
+
+.myStore .msg .favo image {
+  display: block;
+  margin: 6rpx 10rpx 0 0;
+  width: 35rpx;
+  height: 35rpx;
+}
+
+.myStore .img {
+  flex: 5;
+  height: 250rpx;
+}
+
+.myStore .img image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 杂闻收藏 */
+.zawen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fcfffc;
+  padding-bottom: 20rpx;
+}
+
+.zawen .list {
+  background-color: #e5fcff;
+  display: flex;
+  padding: 20rpx;
+  box-sizing: border-box;
+  margin: 15rpx 0;
+  height: 80rpx;
+  position: relative;
+}
+
+.zawen .listHv {
+  background-color: #E0F5F5;
+}
+
+.zawen .list text {
+  font-size: 38rpx;
+  margin-left: 100rpx;
+}
+
+.zawen .list .icon {
+  display: block;
+  width: 60rpx;
+  height: 60rpx;
+  left: 20rpx;
+  bottom: 10rpx;
+  position: absolute;
+}
+
+.zawen .list .arrow {
+  display: block;
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  right: 20rpx;
+}
+
+.more {
+  display: block;
+  width: 100%;
+}
+
+.empty {
+  color: red;
+  height: 80rpx;
+  font-size: 35rpx;
+  padding: 20rpx 30rpx;
+  box-sizing: border-box;
+  background-color: #e5fcff;
+}

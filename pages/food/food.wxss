@@ -1,0 +1,183 @@
+.box {
+  min-height: 1110rpx;
+  padding-bottom: 20rpx;
+  background-color: #f4f4f4;
+}
+text {
+  font-family: cursive;
+}
+/* 导航栏 */
+.header .sp {
+  height: 450rpx;
+}
+
+.header image {
+  width: 100%;
+}
+
+/* 介绍分类 */
+.box .type {
+  margin: 20rpx;
+  display: flex;
+  padding: 20rpx;
+  background-color: white;
+  border-radius: 30rpx;
+}
+
+.box .type view {
+  display: flex;
+  margin: 10rpx;
+  flex-direction: column;
+}
+
+.box .type view image {
+  display: block;
+  height: 150rpx;
+  width: 150rpx;
+  border-radius: 50%;
+}
+
+.box .type view text {
+  margin-top: 10rpx;
+  margin-left: 8rpx;
+  font-size: 35rpx;
+}
+
+/* banner */
+.banner {
+  margin: 20rpx;
+  border-radius: 20rpx;
+}
+
+.banner image {
+  display: block;
+  border-radius: 20rpx;
+  width: 100%;
+}
+
+/* 菜单介绍 */
+.menu {
+  position: relative;
+  display: flex;
+  margin: 20rpx;
+  padding: 20rpx;
+  margin-bottom: 0;
+  border-radius: 20rpx;
+  background-color: white;
+}
+
+.menu .title {
+  display: flex;
+  position: absolute;
+  top: 30rpx;
+  left: 210rpx;
+  font-size: 50rpx;
+  text-align: center;
+  font-family: cursive;
+}
+
+.menu .title image {
+  display: block;
+  height: 50rpx;
+  width: 60rpx;
+}
+
+/* 左边 */
+.menu .left {
+  margin-top: 100rpx;
+  border-radius: 20rpx;
+  width: 322rpx;
+  margin-right: 20rpx;
+  background-color: white;
+}
+
+.menu .left .goods {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 390rpx;
+  background-color: white;
+  border-radius: 20rpx;
+  margin: 10rpx;
+}
+
+.menu .left .goods .label {
+  position: absolute;
+  font-size: 26rpx;
+  font-family: cursive;
+  padding: 5rpx;
+  border-radius: 0 20rpx 20rpx 0;
+  background-color: #ffcf00;
+  top: 192rpx;
+}
+
+.menu .left .goods .image {
+  display: block;
+  height: 230rpx;
+  border-radius: 20rpx 20rpx 0 0;
+  width: 100%;
+}
+
+.menu .left .goods .name {
+  margin: 10rpx 15rpx 0 10rpx;
+  font-weight: bold;
+  font-size: 35rpx;
+  font-family: cursive;
+}
+
+.menu .left .goods .evaluate {
+  color: #939393;
+  margin: 10rpx 10rpx;
+  font-size: 30rpx;
+  font-family: KaiTi;
+}
+
+/* 右边 */
+.menu .right {
+  margin-top: 100rpx;
+  border-radius: 20rpx;
+  width: 322rpx;
+  margin-right: 20rpx;
+  background-color: white;
+}
+
+.menu .right .goods {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 390rpx;
+  background-color: white;
+  border-radius: 20rpx;
+  margin: 10rpx;
+}
+
+.menu .right .goods .label {
+  position: absolute;
+  font-size: 26rpx;
+  font-family: cursive;
+  padding: 5rpx;
+  border-radius: 0 20rpx 20rpx 0;
+  background-color: #ffcf00;
+  top: 192rpx;
+}
+
+.menu .right .goods .image {
+  display: block;
+  height: 230rpx;
+  border-radius: 20rpx 20rpx 0 0;
+  width: 100%;
+}
+
+.menu .right .goods .name {
+  margin: 10rpx 15rpx 0 10rpx;
+  font-weight: bold;
+  font-size: 35rpx;
+  font-family: cursive;
+}
+
+.menu .right .goods .evaluate {
+  color: #939393;
+  margin: 10rpx 10rpx;
+  font-size: 30rpx;
+  font-family: KaiTi;
+}

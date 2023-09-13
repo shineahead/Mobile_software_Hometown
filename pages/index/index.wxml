@@ -1,0 +1,75 @@
+<view class="container">
+  <!-- 轮播图 -->
+  <view class="header">
+    <swiper indicator-dots indicator-color="gray"
+    autoplay circular interval="2000" class="sp">
+      <swiper-item>
+        <image class="img" src="/images/banner-天府.png" mode="widthFix"/>
+      </swiper-item>
+      <swiper-item>
+        <image class="img" src="/images/banner-成都.png" mode="widthFix"/>
+      </swiper-item>
+      <swiper-item>
+        <image class="img" src="/images/banner-内江.png" mode="widthFix"/>
+      </swiper-item>
+      <swiper-item>
+        <image class="img" src="/images/banner-自贡.png" mode="widthFix"/>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <view class="body">
+    <!-- 导航图 -->
+    <view style="padding-left: 30rpx;">
+      <scroll-view class="nav" scroll-x>
+      <view style="display: inline-block; text-align: center;">
+        <image src="/images/饮食.png" class="eat"/>
+        <text style="font-family:cursive; font-size:40rpx">川菜</text>
+      </view>
+      <view style="display: inline-block; text-align: center;">
+        <image src="/images/旅行.jpg" class="tour"/>
+        <text style="font-family:cursive; font-size:40rpx">旅行</text>
+      </view>
+      <view style="display: inline-block; text-align: center;">
+        <image src="/images/大熊猫.png" class="panda"/>
+        <text style="font-family:cursive; font-size:40rpx">大熊猫</text>
+      </view>
+      <view style="display: inline-block; text-align: center;">
+        <image src="/images/麻将.jpg" class="eat"/>
+        <text style="font-family:cursive; font-size:40rpx">麻将</text>
+      </view>
+      <view style="display: inline-block; text-align: center;">
+        <image src="/images/川剧.png" class="tour"/>
+        <text style="font-family:cursive; font-size:40rpx">川剧变脸</text>
+      </view>
+      <view style="display: inline-block; text-align: center;">
+        <image src="/images/蜀绣.jpg" class="panda"/>
+        <text style="font-family:cursive; font-size:40rpx">蜀绣</text>
+      </view>
+    </scroll-view>
+    </view>
+
+    <!-- 跳转发源 -->
+    <view class="history" hover-class="historyHover" bindtap="goToOrigin">
+      <text style="color: white; font-size: 52rpx; font-family: cursive;">  四川发源
+      </text>
+    </view>
+
+    <!-- 四川杂闻 -->
+    <view class="story">
+
+      <view class="title" style="margin-bottom: 35rpx; text-align: center;font-family: cursive; font-size: 40rpx;">
+        <text style="color: gray;">—</text> 四川杂闻 <text style="color: gray;">—</text>
+      </view>
+      
+      <view class="word" wx:for="{{zawen}}" hover-class="wordHover"
+      wx:key="{{item.id}}" bindtap="goToStoryDetail" data-id="{{item.id}}">
+        <image class="icon" src="{{item.icon}}" mode="widthFix"/>
+        <text>{{item.title}}</text>
+        <image src="/images/右箭头.png" class="arrow" mode="widthFix"/>
+      </view>
+
+    </view>
+  </view>
+  
+</view>

@@ -1,0 +1,84 @@
+.box {
+  min-height: 1200rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  background-color: #e7e5e1;
+}
+
+.body {
+  height: 100%;
+  padding-bottom: 20rpx;
+  border-radius: 20rpx;
+  background-color: #f1f1f1;
+}
+
+.body .img {
+  display: block;
+  width: 100%;
+  border-radius: 20rpx;
+}
+
+.body .info {
+  display: flex;
+  flex-direction: row;
+}
+
+.body .info image {
+  display: block;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  margin: 20rpx 10rpx 20rpx 80rpx;
+}
+
+.body .info text {
+  font-family: cursive;
+  font-size: 30rpx;
+}
+
+.body .info .word {
+  margin-top: 35rpx;
+  margin-left: 15rpx;
+}
+
+.body .title {
+  color: #4e5670;
+  text-align: center;
+  font-family: cursive;
+  font-size: 50rpx;
+  /* text-shadow: 0 2px 2px #8a8ad2; */
+  -webkit-text-stroke:0.5px #2AD992;        /*文字描边*/
+  -webkit-text-fill-color:transparent;    /*设置文字的填充颜色*/
+}
+
+.body .content {
+  font-family: cursive;
+  padding: 30rpx;
+  text-indent: 2em;
+  font-size: 35rpx;
+}
+
+.body .xing {
+  display: block;
+  float: right;
+  height: 60rpx;
+  width: 60rpx;
+  margin-right: 30rpx;
+  margin-top: 30rpx;
+}
+
+.body .btn {
+  color: #E9EFFF;
+  padding: 18rpx 0;
+  border-radius: 50rpx;
+  font-family: system-ui;
+  width: 600rpx;
+  font-size: 45rpx;
+  /* background-color: #00D891;left,#FACF94,#00D891 */
+  background: -webkit-linear-gradient(left,#FACF94,#FF8960);
+  margin-bottom: 20rpx;
+}
+
+.body .btnHover {
+  background: #FF8960;
+}

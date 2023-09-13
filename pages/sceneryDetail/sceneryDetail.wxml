@@ -1,0 +1,66 @@
+<view class="box">
+
+  <view class="title">{{name}}</view>
+
+  <image src="{{image}}" mode="widthFix" class="pic"></image>
+
+  <view class="introduction">
+    <text style="color: green; font-size: 45rpx;">简介:</text>
+    {{introduction}}
+  </view>
+
+  <view class="star">
+    <text style="color: green; font-size: 45rpx;">评价:</text>
+    <view style="display: flex; margin: 5rpx 0 0 20rpx;">
+      <view class="mark" wx:for="{{starNum}}"><image src="/images/白星星.png" /></view>
+      </view>
+    <image src="/images/评价.png" class="eva"></image>
+  </view>
+
+  <!-- 分割线 -->
+  <view style="border-top: 2px dashed orange;"></view>
+
+  <!-- 点击评论 -->
+  <view class="btnComment">
+    <input type="text" placeholder="请输入评论内容" bindinput='getInput'
+    id="myInput" value="{{comment}}"/>
+    <image class="img1" src="/images/发送.png" bindtap="sendComment"></image>
+    <image class="img2" src="/images/图片.png" 
+    bindtap="sendImg"></image>
+  </view>
+
+  <!-- 评论区 -->
+  <view class="comment">
+    <view class="header">
+      <image src="/images/星星.png" class="icon"/>
+      <text>评论区</text>
+      <image src="/images/星星.png" class="icon"/>
+    </view>
+
+    <view wx:if="{{commentList.length == 0}}" class="content">
+      <text style="color: red; font-weight: bold;">当前评论区为空，抓紧来抢沙发呀~</text>
+    </view>
+    <view wx:else>
+
+      <view class="content" wx:for="{{commentList}}">
+        <view class="info">
+          <!-- <view class="reply" hover-class="replyHv">回复</view> -->
+          <!-- 删除评论 -->
+          <image class="delete" src="/images/删除.png" bindtap="deleteComment" data-time="{{item.time}}"/>
+          <!-- 点赞评论 -->
+          <image wx:if="{{!item.love}}" class="love" src="/images/点赞.png" bindtap="loveComment" data-time="{{item.time}}"/>
+          <image wx:else class="love" src="/images/点赞-选中.png" bindtap="loveComment" data-time="{{item.time}}"/>
+
+          <image class="avatar" src="{{item.image}}"></image>
+          <text class="nickname">{{item.nickName}}</text>
+          <text class="where">发表于 山东-青岛</text>
+          <text class="time">{{item.time}}</text>
+        </view>
+        <text style="font-size: 45rpx; color: green;">内容：</text>
+        <text style="word-break: break-all;">{{item.content}}</text>
+        <image wx:if="{{item.commentImg}}" class="commentImg" src="{{item.commentImg}}" mode="widthFix"></image>
+      </view>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,65 @@
+<view class="box">
+  <view class="front">
+    <image class="avatar" src="{{avatarUrl}}" bindtap="avatarChange"></image>
+    <view class="info">
+      <view class="msg">
+        <form bindsubmit="functionSubmit">
+        
+          <view class="name">
+            <text>昵称</text>
+            <input type="text" placeholder="Tom" name="name" value="{{name}}" maxlength="15"
+            placeholder-style="font-style: italic; font-size: 30rpx"/>
+          </view>
+
+          <view class="sex">
+            <text>性别</text>
+            <radio-group name="sex">
+              <label>
+                <radio value="man" checked="{{sex == 'man'}}" class="r1">
+                  <image src="/images/男.png"/>
+                  <text>男</text>
+                </radio>
+              </label>
+              <label>
+                <radio value="woman" checked="{{sex != 'man'}}" class="r2">
+                  <image src="/images/女.png"/>
+                  <text>女</text>
+                </radio>
+              </label>
+            </radio-group>
+          </view>
+          
+          <view class="birthday">
+            <text>生日</text>
+            <picker mode="date" bindchange="bindDateChange">
+              <input type="text" placeholder="请选择生日" disabled
+            placeholder-style="font-size: 30rpx" value="{{birth}}"/>
+              <image src="/images/右箭头.png"></image>
+            </picker>
+          </view>
+
+          <view class="sign">
+            <text>个性签名</text>
+            <input type="text" placeholder="写下想说的话吧..." maxlength="15" value="{{sign}}"
+            placeholder-style="font-size: 30rpx" name="sign"/>
+          </view>
+
+          <view class="store" bindtap="bindStore">
+            <text>我的收藏</text>
+            <input type="text" placeholder="查看收藏" disabled
+            placeholder-style="font-size: 30rpx"/>
+            <image src="/images/右箭头.png"></image>
+          </view>
+
+          <button form-type="submit" id="btn">提交修改</button>
+        </form>
+
+      </view>
+    </view>
+
+
+  </view>
+
+</view>
+
+
